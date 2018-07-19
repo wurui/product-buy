@@ -1,0 +1,12 @@
+{
+  "name": "product-buy",
+  "apiDependencies": [
+  {
+    "name": "addressbook"
+  },
+  {
+    "name": "product-list"
+  }
+]
+}
+
