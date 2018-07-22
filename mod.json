@@ -6,6 +6,10 @@
   },
   {
     "name": "product-list"
+  },{
+  	"name":"user-select"
+  },{
+  	"name":"orders"
   }
 ]
 }

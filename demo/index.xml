@@ -42,6 +42,7 @@
             <detail>良睦路1288号</detail>
             <name>吴瑞</name>
             <phone>19122223333</phone>
+            <uid>git/wurui</uid>
         </i>
         <i>
             <_id>58d3782fc54d47560af2cd7b</_id>
@@ -52,6 +53,7 @@
             <detail>16022</detail>
             <name>吴小帅</name>
             <phone>13211123333</phone>
+            <uid>git/wurui</uid>
         </i>
         <i>
             <_id>5a603c9999d74a062b36210f</_id>
@@ -62,8 +64,15 @@
             <detail>10-3-31</detail>
             <name>wurui</name>
             <phone>18199992222</phone>
-            <selected>true</selected>
+            <uid>git/wurui</uid>
         </i>
     </addressbook>
+    <user-select>
+        <i>
+            <uid>git/wurui</uid>
+            <selected>58d3782fc54d47560af2cd7b</selected>
+            <type>addressbook</type>
+        </i>
+    </user-select>
     </data>
 </root>
