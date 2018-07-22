@@ -17,7 +17,7 @@ define(['oxjs'], function (OXJS) {
             /**
              * 'title',totalcount,totalfee,delivery,pack,bill
              * */
-            var Rest = OXJS.useREST('order').setDevHost('http://dev.openxsl.com/');;
+//            var Rest = OXJS.useREST('order').setDevHost('http://dev.openxsl.com/');;
 
             var triggerTd;
 
