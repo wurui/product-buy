@@ -101,7 +101,8 @@ define(['oxjs'], function (OXJS) {
                                             id:param.product_id
                                         }
                                     ]
-                                }
+                                },
+                                'product-list':{}
 
                             }
                             
