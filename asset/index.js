@@ -97,7 +97,7 @@ define(['oxjs'], function (OXJS) {
                                         {
                                             name:param.product_title,
                                             amount:param.amount-0,
-                                            price:param.total-0,
+                                            price:param.product_price-0,
                                             id:param.product_id
                                         }
                                     ]

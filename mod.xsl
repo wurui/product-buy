@@ -25,6 +25,7 @@
             <form>
                 <input type="hidden" value="{$product/_id}" name="product_id"/>
                 <input type="hidden" value="{$product/title}" name="product_title"/>
+                <input type="hidden" value="{$product/price}" name="product_price"/>
                 
                 <table class="ordertable" cellpadding="0" cellspacing="0">
                     <tbody>
