@@ -102,7 +102,7 @@ define(['oxjs'], function (OXJS) {
                                         }
                                     ]
                                 },
-                                'product-list':{}
+                                'product-list':{}//这个必须有，不然拿不到商品信息了
 
                             }
                             
@@ -111,7 +111,14 @@ define(['oxjs'], function (OXJS) {
                         //param.address = getAddress(f);
                         $mod.OXPost(postdata,function(r){
                             var result=r && r[0]
-                            OXJS.toast(result.error?'提交失败：'+result.error:'提交成功！')
+                            if(result.error){
+                                OXJS.toast('提交失败：'+result.error)
+                            }else{
+                                OXJS.toast('订单提交成功！')
+                                //OXJS.gotoPay({dsname:'orders',oid:result.data});
+                                location.href='http://pay.openxsl.com/p/pay/custom?dsname=orders&oid='+result.data;
+                            }
+                            
                         })
 
 
