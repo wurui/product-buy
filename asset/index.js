@@ -116,7 +116,7 @@ define(['oxjs'], function (OXJS) {
                             }else{
                                 OXJS.toast('订单提交成功！')
                                 //OXJS.gotoPay({dsname:'orders',oid:result.data});
-                                location.href='http://pay.openxsl.com/p/pay/custom?dsname=orders&oid='+result.body;
+                                result.payurl &&(location.href=result.payurl)//'http://pay.openxsl.com/p/pay/custom?dsname=orders&oid='+result.body;
                             }
                             
                         })
