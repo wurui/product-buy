@@ -46,7 +46,7 @@
                             </th>
                             <td>
                                 
-                                <xsl:variable name="defAddr" select="data/addressbook/i[_id=$selected_addr_id]"/>
+                                <xsl:variable name="defAddr" select="data/user-address/i[_id=$selected_addr_id]"/>
                                 <p class="J_addr_name">
                                     <span class="J_address_name"><xsl:value-of select="normalize-space($defAddr/name)"/></span>
                                     (<span class="J_address_phone"><xsl:value-of select="normalize-space($defAddr/phone)"/></span>)
