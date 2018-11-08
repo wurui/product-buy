@@ -3,15 +3,16 @@
     	
         <!-- className 'J_OXMod' required  -->
         <div class="J_OXMod oxmod-product-buy" ox-mod="product-buy">
-            <xsl:variable select="data/product-list/i" name="products"/>
-            <xsl:variable select="data/product-list/i[1]" name="product"/>
-            <xsl:variable select="data/customize/i" name="customize"/>
-            <xsl:variable select="data/addressbook/i" name="addressbook" />
-            <xsl:variable name="selected_addr_id" select="data/user-select/i[type='addressbook']/selected"/>
+            <xsl:variable select="data/ecom-products/i" name="products"/>
+            <xsl:variable select="data/ecom-products/i[1]" name="product"/>
+            
+            <xsl:variable select="data/user-address/i" name="addressbook" />
+
+            <xsl:variable name="selected_addr_id" select="data/user-select/i[type='user-address']/selected"/>
         
         
             <div class="product">
-                <span class="mainpic" style="background-image:url({$product/img});"></span>
+                <span class="mainpic" style="background-image:url({$product/media/i[type='image'][1]/src});"></span>
                 <h3 class="title">
                     <xsl:value-of select="$product/title"/>
                 </h3>
@@ -79,8 +80,8 @@
             <div class="popup J_popup">
                 <div class="cnt">
                     <ul class="addresslist">
-                        <xsl:variable name="uniq_id" select="generate-id(data/addressbook)"/>
-                        <xsl:for-each select="data/addressbook/i">
+                        <xsl:variable name="uniq_id" select="generate-id(data/user-address)"/>
+                        <xsl:for-each select="data/user-address/i">
                             <li>
                                 <xsl:variable name="radio-id" select="generate-id(.)"/>
                                 <span class="sign">

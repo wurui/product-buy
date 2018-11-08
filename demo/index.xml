@@ -15,64 +15,75 @@
         <icon>//oxm1.cc/img/app_default.png</icon>
     </p>
     <data>
-    <product-list ADAPTERID="25a542d8b4b933b3f02394c6c">
-        <i>
-            <_id>5a542d8b4b933b3f02394c6b</_id>
-            <title>扫码车贴-定制版</title>
-            <brief></brief>
-            <price>19.18</price>
-            <img>http://i.oxm1.cc/uploads/git/wurui/img/2ajw2sqgzTizgre5gtRi0sqM1b6i.jpg</img>
-            <href></href>
-            <id>28288282</id>
-            <orig_price>28</orig_price>
-            <inventory>100</inventory>
-            <discount>0</discount>
-            <category></category>
-            <sold>0</sold>
-            <owner>git/wurui</owner>
-        </i>
-    </product-list>
-    <addressbook ADAPTERID="258d3782fc54d47560af2cd79">
-        <i>
-            <_id>58d3782fc54d47560af2cd7a</_id>
-            <province>浙江</province>
-            <city>杭州</city>
-            <district>余杭</district>
-            <street>仓前</street>
-            <detail>良睦路1288号</detail>
-            <name>吴瑞</name>
-            <phone>19122223333</phone>
-            <uid>git/wurui</uid>
-        </i>
-        <i>
-            <_id>58d3782fc54d47560af2cd7b</_id>
-            <province>湖北</province>
-            <city>武汉</city>
-            <district>东西湖</district>
-            <street>金银湖</street>
-            <detail>16022</detail>
-            <name>吴小帅</name>
-            <phone>13211123333</phone>
-            <uid>git/wurui</uid>
-        </i>
-        <i>
-            <_id>5a603c9999d74a062b36210f</_id>
-            <province>北京市</province>
-            <city></city>
-            <district>东城区</district>
-            <street></street>
-            <detail>10-3-31</detail>
-            <name>wurui</name>
-            <phone>18199992222</phone>
-            <uid>git/wurui</uid>
-        </i>
-    </addressbook>
-    <user-select>
-        <i>
-            <uid>git/wurui</uid>
-            <selected>58d3782fc54d47560af2cd7b</selected>
-            <type>addressbook</type>
-        </i>
-    </user-select>
+        <ecom-products ADAPTERID="25a542d8b4b933b3f02394c6c">
+            <i>
+                <_id>5a542d8b4b933b3f02394c6b</_id>
+                <title>扫码车贴-定制版</title>
+                <brief></brief>
+                <price>19.18</price>
+                <media>
+                    
+                    <i>
+                        <src>http://i.oxm1.cc/uploads/git/wurui/img/2ajw2sqgzTizgre5gtRi0sqM1b6i.jpg</src>
+                        <type>image</type>
+                    </i>
+                    <i>
+                        <src>http://openxsl4dev.oss-cn-shanghai.aliyuncs.com/uploads/git/wurui/img/2a0y0akscTjiecr0xgRg2z4A4opp-993.png</src>
+                        <type>image</type>
+                    </i>
+                </media>
+                
+                
+                <id>28288282</id>
+                <orig_price>28</orig_price>
+                <inventory>100</inventory>
+                
+                <category></category>
+                <sold>0</sold>
+                <owner>git/wurui</owner>
+            </i>
+        </ecom-products>
+        <user-address ADAPTERID="258d3782fc54d47560af2cd79">
+            <i>
+                <_id>58d3782fc54d47560af2cd7a</_id>
+                <province>浙江</province>
+                <city>杭州</city>
+                <district>余杭</district>
+                <street>仓前</street>
+                <detail>良睦路1288号</detail>
+                <name>吴瑞</name>
+                <phone>19122223333</phone>
+                <uid>git/wurui</uid>
+            </i>
+            <i>
+                <_id>58d3782fc54d47560af2cd7b</_id>
+                <province>湖北</province>
+                <city>武汉</city>
+                <district>东西湖</district>
+                <street>金银湖</street>
+                <detail>16022</detail>
+                <name>吴小帅</name>
+                <phone>13211123333</phone>
+                <uid>git/wurui</uid>
+            </i>
+            <i>
+                <_id>5a603c9999d74a062b36210f</_id>
+                <province>北京市</province>
+                <city></city>
+                <district>东城区</district>
+                <street></street>
+                <detail>10-3-31</detail>
+                <name>wurui</name>
+                <phone>18199992222</phone>
+                <uid>git/wurui</uid>
+            </i>
+        </user-address>
+        <user-select>
+            <i>
+                <uid>git/wurui</uid>
+                <selected>58d3782fc54d47560af2cd7b</selected>
+                <type>addressbook</type>
+            </i>
+        </user-select>
     </data>
 </root>

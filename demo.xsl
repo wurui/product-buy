@@ -12,12 +12,19 @@
         <script src="https://l.oxm1.cc/3rd/require.js"></script>
       </head>
       <body>
-        <div class="layout">
-          <xsl:call-template name="wurui.product-buy" />
-        </div>
+        <oxpage>
+          <div class="layout">
+            <xsl:call-template name="wurui.product-buy" />
+          </div>
+        </oxpage>
         <script><![CDATA[
           require.config({
-            urlArgs:Math.random(),
+            urlArgs:function(id,url){
+              if(/^https?:/.test(url)){
+                return ''
+              }
+              return '?r='+Math.random()
+            },
             paths: {
               jquery: 'https://l.oxm1.cc/3rd/jquery',
               zepto: 'https://l.oxm1.cc/3rd/zepto.min',

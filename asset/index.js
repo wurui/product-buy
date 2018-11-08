@@ -1,27 +1,23 @@
 define(['oxjs'], function (OXJS) {
     var getAddress = function ($div) {
-            var obj = {
-                toString:function(){
-                    return [this.name,this.phone,this.province,this.city,this.district,this.street,this.detail ].join(' ')
-                }
-            };
-            var addressfields = 'name,phone,province,city,district,street,detail'.split(',');
-            for (var i = 0; i < addressfields.length; i++) {
-                var field = addressfields[i];
-                obj[field] = $('.J_address_' + field, $div).html();
+        var obj = {
+            toString:function(){
+                return [this.name,this.phone,this.province,this.city,this.district,this.street,this.detail ].join(' ')
             }
-            return obj;
         };
+        var addressfields = 'name,phone,province,city,district,street,detail'.split(',');
+        for (var i = 0; i < addressfields.length; i++) {
+            var field = addressfields[i];
+            obj[field] = $('.J_address_' + field, $div).html();
+        }
+        return obj;
+    };
     return {
         init: function ($mod) {
-            /**
-             * 'title',totalcount,totalfee,delivery,pack,bill
-             * */
-//            var Rest = OXJS.useREST('order').setDevHost('http://dev.openxsl.com/');;
-
+      
             var triggerTd;
 
-            var payurl = $mod.attr('data-payurl');
+            //var payurl = $mod.attr('data-payurl');
 
             var f = $('form', $mod)[0];
 
@@ -82,7 +78,7 @@ define(['oxjs'], function (OXJS) {
 
                         var postdata={
                             $order:{
-                                orders:{
+                                'ecom-orders':{
                                     title:param.product_title+'X'+param.amount,
                                     totalfee:param.total-0,
                                     //time:Date.now(),
@@ -102,7 +98,7 @@ define(['oxjs'], function (OXJS) {
                                         }
                                     ]
                                 },
-                                'product-list':{}//这个必须有，不然拿不到商品信息了
+                                'ecom-products':{}//这个必须有，不然拿不到商品信息了
 
                             }
                             

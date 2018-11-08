@@ -1,16 +1,16 @@
 {
   "name": "product-buy",
   "apiDependencies": [
-  {
-    "name": "addressbook"
-  },
-  {
-    "name": "product-list"
-  },{
-  	"name":"user-select"
-  },{
-  	"name":"orders"
-  }
-]
+    {
+      "name": "user-address"
+    },{
+      "name":"user-select"
+    },{
+    	"name":"ecom-orders",
+    },{
+      "name": "ecom-products",
+      "SELECTOR":"_id"
+    }
+  ]
 }
 
