@@ -58,7 +58,7 @@
                                     <span class="J_address_street"><xsl:value-of select="normalize-space($defAddr/street)"/></span>街道
                                     <span class="J_address_detail"><xsl:value-of select="normalize-space($defAddr/detail)"/></span>
                                 </span>
-                                <button type="button" data-action="popup">&gt;</button>
+                                <button type="button" class="bt-popup" data-action="popup">&gt;</button>
                             </td>
                         </tr>
                     </tbody>

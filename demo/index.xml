@@ -15,33 +15,55 @@
         <icon>//oxm1.cc/img/app_default.png</icon>
     </p>
     <data>
-        <ecom-products ADAPTERID="25a542d8b4b933b3f02394c6c">
+        <ecom-products>
             <i>
-                <_id>5a542d8b4b933b3f02394c6b</_id>
-                <title>扫码车贴-定制版</title>
-                <brief></brief>
-                <price>19.18</price>
-                <media>
-                    
-                    <i>
-                        <src>http://i.oxm1.cc/uploads/git/wurui/img/2ajw2sqgzTizgre5gtRi0sqM1b6i.jpg</src>
-                        <type>image</type>
-                    </i>
-                    <i>
-                        <src>http://openxsl4dev.oss-cn-shanghai.aliyuncs.com/uploads/git/wurui/img/2a0y0akscTjiecr0xgRg2z4A4opp-993.png</src>
-                        <type>image</type>
-                    </i>
-                </media>
-                
-                
-                <id>28288282</id>
-                <orig_price>28</orig_price>
-                <inventory>100</inventory>
-                
+                <title>智利红车厘子JJ级(单果约28mm+) 500g</title>
+                <brief>产地直采，空运直达，鲜甜多汁，营养美味</brief>
+                <price>89</price>
+                <orig_price>119</orig_price>
+                <inventory>10</inventory>
                 <category></category>
                 <sold>0</sold>
                 <owner>git/wurui</owner>
+                <parameter>
+                    <i>
+                        <name>产地</name>
+                        <value>智利</value>
+                    </i>
+                    <i>
+                        <name>净含量</name>
+                        <value>500g</value>
+                    </i>
+                    <i>
+                        <name>储存条件</name>
+                        <value>冷藏</value>
+                    </i>
+                </parameter>
+                <description><![CDATA[
+                    <p> <img src="http://i.oxm1.cc/uploads/git/wurui/img/29uekrxqwTjoxs9nywRqqqqA24or-2021.jpg">
+                    </p>
+                    <p> <img src="http://i.oxm1.cc/uploads/git/wurui/img/29uekrx1dTjoxs9oofRkm9iA3f9e-2476.jpg"></p>
+                    <p> <img src="http://i.oxm1.cc/uploads/git/wurui/img/29uekrw2yTjoxs9pmuRinp6A43pg-2501.jpg"></p>
+                    <p>   <img src="http://i.oxm1.cc/uploads/git/wurui/img/29uekruy1Tjoxs9qrrRqk7vA23c0-2449.jpg"></p>
+                    <p>   &nbsp;</p><p>   &nbsp;</p><p>   &nbsp;</p>
+                    ]]>
+                </description>
+                <media>
+                    <i>
+                        <src>http://i.oxm1.cc/uploads/git/wurui/img/29uejvbjuTjoxt6a5yRu6jeA19i5-750.jpg</src>
+                        <type>image</type>
+                    </i>
+                    <i>
+                        <src>http://i.oxm1.cc/uploads/git/wurui/img/29uejvas8Tjoxt6axkReekdA1d22-750.jpg</src>
+                        <type>image</type>
+                    </i>
+                    <i>
+                        <src>http://i.oxm1.cc/uploads/git/wurui/img/29uejva4oTjoxt6bl4Rq6niA1on3-750.jpg</src>
+                        <type>image</type>
+                    </i>
+                </media>
             </i>
+           
         </ecom-products>
         <user-address ADAPTERID="258d3782fc54d47560af2cd79">
             <i>
