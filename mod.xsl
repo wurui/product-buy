@@ -2,7 +2,7 @@
     <xsl:template match="/root" name="wurui.product-buy">
     	
         <!-- className 'J_OXMod' required  -->
-        <div class="J_OXMod oxmod-product-buy" ox-mod="product-buy" data-ts="{/root/attribute::ts_r}">
+        <div class="J_OXMod oxmod-product-buy" ox-mod="product-buy">
             <xsl:variable select="data/ecom-products/i" name="products"/>
             <xsl:variable select="data/ecom-products/i[1]" name="product"/>
             
@@ -44,9 +44,13 @@
                             <th>
                                 <nobr>收货地址</nobr>
                             </th>
-                            <td ox-refresh="html">
-                                
+                            <td class="J_Address" ox-refresh="html" data-ts="{/root/attribute::ts_r}">
                                 <xsl:variable name="defAddr" select="data/user-address/i[_id=$selected_addr_id]"/>
+                                <xsl:if test="not($defAddr/name)">
+                                    请先添加地址
+                                </xsl:if>
+                                
+                                
                                 <p class="J_addr_name">
                                     <span class="J_address_name"><xsl:value-of select="normalize-space($defAddr/name)"/></span>
                                     &#160;<span class="J_address_phone"><xsl:value-of select="normalize-space($defAddr/phone)"/></span>
@@ -60,7 +64,7 @@
                                     <span class="J_address_detail"><xsl:value-of select="normalize-space($defAddr/detail)"/></span>
                                 </span>
                                 
-                                <a href="{$defAddr/LINK/addresslist}"><nobr>&#160;&#160;&#160;&#160;地址管理&gt;</nobr></a>
+                                
                             </td>
                         </tr>
                     </tbody>

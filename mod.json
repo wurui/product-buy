@@ -3,12 +3,6 @@
   "apiDependencies": [
     {
       "name": "user-address",
-      "LINK":[
-        {
-          "name":"addresslist",
-          "title":"地址管理页"
-        }
-      ]
     },{
       "name":"user-select"
     },{
