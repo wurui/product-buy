@@ -8,12 +8,30 @@ define(['oxjs'], function (OXJS) {
         var addressfields = 'name,phone,province,city,district,street,detail'.split(',');
         for (var i = 0; i < addressfields.length; i++) {
             var field = addressfields[i];
-            obj[field] = $('.J_address_' + field, $div).html();
+            var $node=$('.J_address_' + field, $div);
+            if($node.length){
+                obj[field] = $node.html();
+            }
+            
         }
         return obj;
     };
     return {
         init: function ($mod) {
+            var checkDataTime=function(){
+            
+            var ts=$mod.attr('data-ts');
+            //console.log(ts);      
+            if((new Date()).getTime()-ts>5000){
+                //这里主要是解决页面回退的问题，回退后数据源没有刷新，时间戳是老的
+                //数据老于5秒，5秒间可能在其它页面完成一次数据操作，就刷新之
+                
+                $mod.OXRefresh()
+            }
+
+        }
+
+        window.addEventListener('pageshow',checkDataTime);
       
             var triggerTd;
 
@@ -35,18 +53,6 @@ define(['oxjs'], function (OXJS) {
                 $amountInput = $('.J_input', $mod).on('change', onAmountChange);
 
             
-
-
-            var $popup = $('.J_popup', $mod).on('click', function () {
-                $popup.removeClass('popup-show')
-            }).on('change', function (e) {
-                //console.log('addr changed!', e.target,triggerTd);
-                var $li = $(e.target).closest('li'),
-                    name = $('.J_addr_name', $li).html(),
-                    detail = $('.J_addr_detail', $li).html();
-                $('.J_addr_name', triggerTd).html(name);
-                $('.J_addr_detail', triggerTd).html(detail);
-            });
             var tap_ts = 0;
             $mod.on('click', function (e) {//OXJS.toast('clicked')
                 var tar = e.target,
@@ -58,10 +64,7 @@ define(['oxjs'], function (OXJS) {
                 tap_ts = Date.now();
                 //triggerTd=null;
                 switch (action) {
-                    case 'popup':
-                        $popup.addClass('popup-show');
-                        triggerTd = $(tar).closest('td');
-                        break
+                 
                     case 'plus':
                         var $input = $(tar).prev('.J_input');
                         $input.val($input.val() - -1);

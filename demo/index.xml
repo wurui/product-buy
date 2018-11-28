@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <?xml-stylesheet type="text/xsl" href="../demo.xsl"?>
-<root>
+<root ts_r="1543318447478">
     <env>
         <domain>local</domain>
     </env>
@@ -82,11 +82,14 @@
                 <province>湖北</province>
                 <city>武汉</city>
                 <district>东西湖</district>
-                <street>金银湖</street>
-                <detail>16022</detail>
+                <street></street>
+                <detail>金银湖1234</detail>
                 <name>吴小帅</name>
                 <phone>13211123333</phone>
                 <uid>git/wurui</uid>
+                <LINK>
+                    <addresslist>../../user-address/demo/index.xml</addresslist>
+                </LINK>
             </i>
             <i>
                 <_id>5a603c9999d74a062b36210f</_id>
