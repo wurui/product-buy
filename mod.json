@@ -2,7 +2,7 @@
   "name": "product-buy",
   "apiDependencies": [
     {
-      "name": "user-address",
+      "name": "user-address"
     },{
       "name":"user-select"
     },{
