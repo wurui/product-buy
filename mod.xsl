@@ -44,7 +44,7 @@
                             <th>
                                 <nobr>收货地址</nobr>
                             </th>
-                            <td class="J_Address" ox-refresh="html" data-ts="{/root/attribute::ts_r}">
+                            <td class="J_Address address" ox-refresh="html" data-ts="{/root/attribute::ts_r}">
                                 <xsl:variable name="defAddr" select="data/user-address/i[_id=$selected_addr_id]"/>
                                 <xsl:if test="not($defAddr/name)">
                                     请先添加地址
@@ -70,7 +70,7 @@
                     </tbody>
                 </table>
                 <p class="total">
-                    合计:&#160;&#160;
+                    合计金额&#160;&#160;
                     <span class="price J_total">
                         <xsl:value-of select="$product/price"/>
                     </span>
@@ -78,7 +78,7 @@
                 </p>
            
                 <div class="op">
-                    <button class="bt-submit" data-action="submit" type="button">提交订单</button>
+                    <button class="bt-submit skin-bgcolor" data-action="submit" type="button">提交订单</button>
                 </div>
 
             </form>
